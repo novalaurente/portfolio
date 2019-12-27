@@ -24,7 +24,7 @@ const AboutMe = () => {
           </p>
           <a
             href="https://docs.google.com/document/d/18OlxKz_Q4KTNKMvmTc__9HlDksnNSXDOyTh8PNm96Fw/edit?usp=sharing"
-            className='btn'
+            className='custom-btn'
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -24,14 +24,14 @@ const AboutMe = () => {
             <div className='code'>
               <a
                 href='https://novalaurente1.gitlab.io/capstone001'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 View Live
               </a>
               <a
                 href='https://gitlab.com/novalaurente1/capstone001'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 Gitlab Code
@@ -62,14 +62,14 @@ const AboutMe = () => {
             <div className='code'>
               <a
                 href='http://shielded-earth-19513.herokuapp.com/'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 View Live
               </a>
               <a
                 href='https://gitlab.com/novalaurente1/capstone002'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 Gitlab Code
@@ -113,14 +113,14 @@ const AboutMe = () => {
             <div className='code'>
               <a
                 href='https://sad-hugle-294726.netlify.com'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 View Live
               </a>
               <a
                 href='https://gitlab.com/novalaurente1/capstone003'
-                className='btn'
+                className='custom-btn'
                 target='_blank'
                 rel='noopener noreferrer'>
                 Gitlab Code
