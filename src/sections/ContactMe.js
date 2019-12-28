@@ -4,12 +4,15 @@ const ContactMe = () => {
   return (
     <Fragment>
         <section className='contact' id='contactMe'>
-          <div className='left'>
+          <div className='section-title-container'>
             <h1>Contact</h1>
-            <div className='section-text'>
-              <p>Thank you for visiting!</p>
-              <p>You may reach me at novalaurente@gmail.com</p>
-            </div>
+          </div>
+          <div className='section-content'>
+              <div className='section-text'>
+                <p>Thank you for visiting!</p>
+                <p>Both my <strong>Invento</strong> and <strong>Ascend Yoga</strong> projects have an admin tool. You may email me if you want to check them out.</p>
+                <p>You may reach me at novalaurente@gmail.com.</p>
+              </div>
           </div>
         </section>
     </Fragment>

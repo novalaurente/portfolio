@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <Fragment>
       <section className='about-me' id='aboutMe'>
-        <div className='section-title'>
+        <div className='section-title-container'>
           <h1>About Me</h1>
         </div>
         <div className='section-content'>

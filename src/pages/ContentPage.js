@@ -9,8 +9,8 @@ const Content = () => {
         <div className='content'>
           <AboutMe />
           <Portfolio />
-          {/* <Skills /> */}
-          {/* <ContactMe /> */}
+          <Skills />
+          <ContactMe />
         </div>
       </div>
     </Fragment>
