@@ -8,7 +8,7 @@ const Content = () => {
         <Sidebar />
         <div className='content'>
           <AboutMe />
-          {/* <Portfolio /> */}
+          <Portfolio />
           {/* <Skills /> */}
           {/* <ContactMe /> */}
         </div>

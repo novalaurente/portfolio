@@ -539,17 +539,15 @@ html {
 
 .portfolio {
   height: 100vh;
-	display: flex;
+  display: flex;
+	flex-direction: column;
 }
 
-.portfolio .left-section {
-	margin-left: 20%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 2.5%;
-	position: relative;
+.portfolio .section-title {
+  height: 25%;
+  margin-left: 15%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .portfolio h1 {
@@ -564,8 +562,32 @@ html {
 	letter-spacing: 0.15em;
 	color: #000000;
 	text-transform: lowercase;
-	position: absolute;
-	top: 16%;
+  position: absolute;
+}
+
+.portfolio .section-content {
+  margin-left: 15%;
+  height: 75%;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.project-content {
+  margin-top: 7.5%;
+  height: 100%;
+	width: 100%;
+  display: flex;
+}
+
+.project-content .left-section, .right-section {
+  height: 100%;
+	width: 50%;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	padding: 0 2.5%;
+	position: relative;
 }
 
 .portfolio img {
@@ -588,13 +610,6 @@ html {
 	z-index: 10000;
 }
 
-.portfolio .right-section {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	padding: 14% 2.5% 10% 5%;
-}
-
 .right-section h2 {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
@@ -605,7 +620,7 @@ html {
 	align-items: center;
 	letter-spacing: 0.15em;
 	color: #000000;
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .left-section h2 {
@@ -661,39 +676,6 @@ html {
 
 .left-section .code > a {
 	margin: 10% 1.5%;
-}
-
-.tooltip {
-  position: relative;
-	display: inline-block;
-}
-
-.tooltip .tooltiptext {
-	font-family: 'Raleway', sans-serif;
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-	border-radius: 6px; 
-  position: absolute;
-  z-index: 5000;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-.project-title {
-	display: inline;
-  color: #000000;
-  text-decoration: none !important;
-}
-
-.project-title:hover {
-  text-decoration: underline !important;
-	cursor: pointer;
 }
 
 /*section 3*/
@@ -1043,7 +1025,7 @@ html {
 /* section 1 */
 
 .about-me {
-  height: 100%;
+  height: 1280px;
 }
 
 .about-me .section-title {
@@ -1054,17 +1036,14 @@ html {
 }
 
 .about-me .section-content {
-  /* height: 75%; */
-  padding-top: 200px;
+  padding-top: 350px;
   margin-bottom: 0;
-
   margin-left: 0;
   width: 100%;
   flex-direction: column-reverse;
 }
 
 .about-me .profile-pic {
-  /* height: 10%; */
   width: 100%;
 }
 
@@ -1074,7 +1053,6 @@ html {
 }
 
 .about-me .section-text {
-  /* height: 20rem; */
 	width: 80%;
 }
 
@@ -1085,6 +1063,65 @@ html {
 
 .custom-btn {
   margin: 10px auto;
+}
+
+/*section 2*/
+
+.portfolio {
+  height: 1280px;
+ 
+}
+
+.portfolio .section-title {
+  height: 10%;
+  margin-left: 0;
+  justify-content: center;
+}
+
+.portfolio .section-content {
+  margin-left: 0;
+  /* margin-top: 35%; */
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.project-content {
+  /* margin-top: 7.5%; */
+  height: 100%;
+	width: 100%;
+  display: flex;
+	flex-direction: column;
+}
+
+.portfolio img {
+  width: 325px;
+}
+
+.project-content .left-section, .right-section {
+  height: 100%;
+  width: 100%;
+  margin-top: 30%;
+  padding: 0 2.5%;
+}
+
+.right-section h2 {
+  justify-content: center;
+}
+
+.left-section h2 {
+  justify-content: center;
+}
+
+#project-content-3 {
+  flex-direction: column-reverse !important;
+}
+
+.tools {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 }
