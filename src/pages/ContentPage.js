@@ -8,9 +8,9 @@ const Content = () => {
         <Sidebar />
         <div className='content'>
           <AboutMe />
-          <Portfolio />
-          <Skills />
-          <ContactMe />
+          {/* <Portfolio /> */}
+          {/* <Skills /> */}
+          {/* <ContactMe /> */}
         </div>
       </div>
     </Fragment>
