@@ -207,6 +207,10 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
+#black-triangle-container:hover {
+  animation-iteration-count: 0;
+}
+
 #left-orange-container {
   height: 120px;
   width: auto;
@@ -216,6 +220,10 @@ html {
   z-index: 200;
   animation-duration: 700ms;
   transition: all 0.3s ease-in-out;
+}
+
+#left-orange-container:hover {
+  animation-iteration-count: 0;
 }
 
 #yellow-triangle-container {
@@ -229,6 +237,10 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
+#yellow-triangle-container:hover {
+  animation-iteration-count: 0;
+}
+
 #right-orange-container {
   height: 80px;
   width: auto;
@@ -238,6 +250,10 @@ html {
   z-index: 2000;
   animation-duration: 1200ms;
   transition: all 0.3s ease-in-out;
+}
+
+#right-orange-container:hover {
+  animation-iteration-count: 0;
 }
 
 .container:hover .image {
