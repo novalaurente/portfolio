@@ -763,7 +763,12 @@ html {
   MEDIA QUERIES
 ----------------------------------------------------- */
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 360px),
+  only screen and (min-device-width: 375px) 
+  and (max-device-width: 812px),
+  only screen and (min-device-width: 411px) 
+  and (max-device-width: 823px)
+{
 
   #all-content {
     height: 100vh;
