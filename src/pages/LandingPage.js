@@ -12,7 +12,7 @@ const LandingPage = () => {
               <div id="left-orange-container" className="container grow">
                 <img className="animated zoomIn image" id="left-orange" src="assets/images/triangles/left-orange.svg" alt="" />
                 <div className="middle left-orange-middle">
-                  <Link to='content#aboutMe' smooth className='text left-orange-text'>
+                  <Link to='content#aboutMe' smooth className='text text-white left-orange-text'>
                     About Me
                   </Link>
                 </div>
@@ -32,7 +32,7 @@ const LandingPage = () => {
               <div id="black-triangle-container" className="container grow">
                 <img className="animated zoomIn image" src="assets/images/triangles/black.svg" alt="" />
                 <div className="middle black-triangle-middle">
-                  <Link to='content#Portfolio' smooth className='text black-triangle-text'>
+                  <Link to='content#Portfolio' smooth className='text text-white black-triangle-text'>
                     Portfolio
                   </Link>
                 </div>
@@ -43,7 +43,7 @@ const LandingPage = () => {
               <div id="right-orange-container" className="container grow">
                 <img className="animated zoomIn image" src="assets/images/triangles/right-orange.svg" alt="" />
                 <div className="middle right-orange-middle">
-                  <Link to='content#contactMe' smooth className='text right-orange-text'>
+                  <Link to='content#contactMe' smooth className='text text-white right-orange-text'>
                     Contact Me
                   </Link>
                 </div>

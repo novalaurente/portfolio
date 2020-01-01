@@ -9,7 +9,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px red solid; */
 }
 
 .body {
@@ -311,8 +310,8 @@ html {
 }
 
 .right-orange-text {
-  font-size: 8px;
-  padding: 8 px auto;
+  font-size: 10px;
+  padding: 10px auto;
 }
 
 .text:hover {
@@ -426,6 +425,10 @@ html {
   flex-wrap: nowrap !important;
   display: flex;
   justify-content: space-between;
+}
+
+.toggle-button {
+  display: none;
 }
 
 /* ---------------------------------------------------
@@ -937,6 +940,10 @@ html {
   font-size: 28px;
 }
 
+.toggle-button {
+  display: inline-block;
+}
+
 .sidebar-collapse {
   height: 50%;
   margin: auto 5px; 
@@ -983,6 +990,10 @@ html {
 }
 
 .sidebar-collapse .sidebar-socmed-icons {
+  display: none;
+}
+
+.collapse:not(.show) {
   display: none;
 }
 
@@ -1271,6 +1282,10 @@ SIDEBAR STYLE
 
 .sidebar-collapse .sidebar-socmed-icons {
   display: none;
+}
+
+.toggle-button {
+  display: inline-block;
 }
 
 /* ---------------------------------------------------

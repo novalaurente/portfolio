@@ -12,7 +12,11 @@ const Sidebar = () => {
   const tabletSize = window.matchMedia("(max-width: 768px)");
 
   const handleCollapseMenu = () => {
-    setCollapsed(!collapsed)
+    if(phoneSize.matches===true || tabletSize.matches===true){
+      setCollapsed(!collapsed)
+    }else{
+      setCollapsed(collapsed)
+    }    
   }
 
   return (
@@ -28,19 +32,14 @@ const Sidebar = () => {
               </a>
             </div>
           </NavbarBrand>
+          <NavbarToggler onClick={toggleNavbar} className='mr-2 toggle-button' />
+        </div>
+        <Collapse 
+          isOpen=
           {
             phoneSize.matches===true || tabletSize.matches===true
             ?
-            <NavbarToggler onClick={toggleNavbar} className='mr-2' />
-            :
-            ''
-          }
-        </div>
-        <Collapse 
-          isOpen={
-            phoneSize.matches===true || tabletSize.matches===true
-            ?
-            !collapsed
+            collapsed
             :
             collapsed
           } 
