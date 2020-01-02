@@ -27,7 +27,7 @@ const Sidebar = () => {
         <div id='navbar-phone'>
           <NavbarBrand href='/'>
             <div className='sidebar-header'>
-              <a href='content'>
+              <a href='#'>
                 <img className='sidebar-logo grow' src='assets/images/portfolio-logo.gif' alt='' />
               </a>
             </div>
