@@ -25,13 +25,6 @@ const AboutMe = () => {
               When I’m not coding, I like to spend my time playing the ukulele at some beach in the
               North during the off-peak season.
             </p>
-            <a
-              href='https://docs.google.com/document/d/18OlxKz_Q4KTNKMvmTc__9HlDksnNSXDOyTh8PNm96Fw/edit?usp=sharing'
-              className='custom-btn'
-              target='_blank'
-              rel='noopener noreferrer'>
-              View Resume
-            </a>
           </div>
           <div className='profile-pic'>
             <img className='grow' src='assets/images/profile.jpg' alt='author holding phone' />
