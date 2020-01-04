@@ -1,4 +1,4 @@
-import Sidebar from './Sidebar';
+import Sidebar from './sidebar/Sidebar';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
 import Skills from './Skills';

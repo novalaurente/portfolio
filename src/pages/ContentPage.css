@@ -1,0 +1,97 @@
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .sidebar-logo {
+    width: 7rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .wrapper > .sidebar {
+    width: 10vw;
+    position: fixed;
+    height: 100vh;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px solid #e5e5e5;
+  }
+
+  .sidebar > .sidebar-collapse {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 6.25rem;
+    margin-top: 20vh;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu {
+    position: relative;
+    height: 30px;
+    width: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .sidebar-menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .text,
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .image,
+  {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .text {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    color: #f25209;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu:hover .image {
+    opacity: 0;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu:hover .text {
+    opacity: 1;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .nav-item {
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-socmed-icons {
+    text-align: center;
+  }
+
+  .sidebar-socmed-icons {
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.25rem;
+    margin: 5px 0;
+    color: #292f36;
+  }
+
+  .grow:hover {
+    transform: scale(1.1);
+  }
+}

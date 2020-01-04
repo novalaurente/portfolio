@@ -1,19 +1,21 @@
 import React, { Fragment } from 'react';
-import { Sidebar, AboutMe, Portfolio, Skills, ContactMe } from '../sections';
+import { AboutMe, Portfolio, Skills, ContactMe } from '../sections';
+
+import Sidebar from '../sections/sidebar/Sidebar';
+
+import './ContentPage.css';
 
 const Content = () => {
   return (
-    <Fragment>
-      <div className='wrapper'>
-        <Sidebar />
-        <div className='content'>
-          <AboutMe />
-          <Portfolio />
-          <Skills />
-          <ContactMe />
-        </div>
+    <div className='wrapper'>
+      <Sidebar />
+      <div className='content'>
+        <AboutMe />
+        <Portfolio />
+        <Skills />
+        <ContactMe />
       </div>
-    </Fragment>
+    </div>
   );
 };
 
