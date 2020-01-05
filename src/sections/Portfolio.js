@@ -108,7 +108,7 @@ const AboutMe = () => {
                 </div>
                 <div className='code'>
                   <a
-                    href='https://sad-hugle-294726.netlify.com'
+                    href='https://ascendyoga.netlify.com'
                     className='custom-btn'
                     target='_blank'
                     rel='noopener noreferrer'>
