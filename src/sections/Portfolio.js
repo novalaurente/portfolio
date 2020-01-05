@@ -51,7 +51,7 @@ const AboutMe = () => {
             <Fade left duration={2000} delay={750}>
               <div className='left-section'>
                 <h2>Invento</h2>
-                <p>A supplies and equipment inventory management system for an SME.</p>
+                <p>A supplies and equipment inventory management system for an SME. Contact me for admin access. </p>
                 <div className='tools'>
                   <button className='pseudo-btn'>BOOTSTRAP</button>
                   <button className='pseudo-btn'>JAVASCRIPT</button>
@@ -95,7 +95,7 @@ const AboutMe = () => {
               <div className='right-section'>
                 <div></div>
                 <h2>Ascend Yoga</h2>
-                <p>A class booking system for a fictional yoga studio.</p>
+                <p>A class booking system for a fictional yoga studio. Contact me for admin access.</p>
                 <div className='tools'>
                   <button className='pseudo-btn'>MongoDB</button>
                   <button className='pseudo-btn'>Express.js</button>

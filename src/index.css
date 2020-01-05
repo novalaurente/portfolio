@@ -586,11 +586,6 @@ html {
   flex-direction: column;
 }
 
-/* .section-title-container,
-.section-title-content {
-  width: 100%;
-} */
-
 .skills .section-title-container {
   height: 25%;
   margin-left: 15%;
@@ -842,7 +837,6 @@ html {
 }
 
 .about-me p {
-  text-align: center;
   margin-bottom: 1.5rem;
 }
 
@@ -963,72 +957,6 @@ html {
 .contact .section-text {
   width: 80%;
   text-align: center;
-}
-
-}
-
-@media only screen and (min-width: 361px) and (max-width: 768px) {
- 
-  #triangles-container {
-    width: 80vw;
-  }
-  
-  #greetings {
-    width: 50vw;
-    top: 465px;
-    left: 250px;
-    z-index: 20;
-  }
-  
-  #greetings .section-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-/* ---------------------------------------------------
-  CONTENT STYLE
------------------------------------------------------ */
-
-/* section 1 */
-
-.about-me img {
-	width: 200px;
-	height: 200px;
-}
-
-/*section 2*/
-
-.portfolio .section-content {
-  margin: 0 5%;
-  display: flex;
-	flex-direction: column;
-  align-items: center;
-}
-
-.portfolio img {
-  width: 325px;
-}
-
-.tools {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/*section 3*/
-
-.skills .section-content {
-  margin-left: 0;
-  display: flex;
-	flex-direction: column;
-  align-items: center;
-}
-
-.skills .toolkit {
-  justify-content: center;
-  margin-top: 10%;
 }
 
 }

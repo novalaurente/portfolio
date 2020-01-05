@@ -11,7 +11,7 @@ const ContactMe = () => {
               <div className='section-text'>
                 <p>Thank you for visiting!</p>
                 <p>Both my <strong>Invento</strong> and <strong>Ascend Yoga</strong> projects have an admin tool. You may email me if you want to check them out.</p>
-                <p>You may reach me at novalaurente@gmail.com.</p>
+                <p>You may reach me at <a href="mailto:novalaurente@gmail.com">novalaurente@gmail.com.</a></p>
               </div>
           </div>
         </section>

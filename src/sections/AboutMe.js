@@ -15,7 +15,7 @@ const AboutMe = () => {
             </p>
             <p>
               My interest in the IT industry started during my first job when I became a project
-              assistant in the Management Information System team of a government agency where I
+              assistant in the Management Information System team of DOST-ASTI where I
               became inspired by the impact my development team has made in some of the other
               agencies we serve. I then spent the next few years as a Business Analyst to further
               explore this industry. But now, I found another aspect of the industry that I want to

@@ -1,24 +1,97 @@
-.sidebar {
-  background-color: #ffffff;
-}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
 
-.sidebar-socmed-icons {
-  text-align: center;
-}
+  .wrapper {
+    display: flex;
+  }
 
-.sidebar-socmed-icons i {
-  transition: all 0.2s ease-in-out;
-  font-size: 18px;
-  margin: 5px 0;
-  color: #292f36;
-}
+  .sidebar {
+    width: 10vw;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 
-.sidebar-logo {
-  width: 2.5rem;
-}
+  .sidebar-logo {
+    width: 7rem;
+    transition: all 0.2s ease-in-out;
+  }
 
-.sidebar > .sidebar-collapse {
-  background-color: #FFFFFF;
+  .sidebar > .sidebar-collapse {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 6.25rem;
+    margin-top: 20vh;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu {
+    position: relative;
+    height: 30px;
+    width: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .sidebar-menu-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .text,
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .image {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu .text {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    color: #f25209;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu:hover .image {
+    opacity: 0;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .menu:hover .text {
+    opacity: 1;
+  }
+
+  .sidebar > .sidebar-collapse > .sidebar-menu .nav-item {
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-socmed-icons {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .sidebar-socmed-icons i {
+    transition: all 0.2s ease-in-out;
+    font-size: 1.25rem;
+    margin: 5px 0;
+    color: #292f36;
+  }
+
+  .grow:hover {
+    transform: scale(1.1);
+  }
 }
 
 /** for mobile devices **/
@@ -42,348 +115,40 @@
       color: #f25209;
     }
 
+    .sidebar-logo {
+      width: 3rem;
+      transition: all 0.2s ease-in-out;
+    }
+
     .sidebar-socmed-icons > li {
       flex: 1;
     }
 
     .sidebar {
       border-bottom: 0.5px solid #e5e5e5;
+      background-color: #ffffff;
+    }
+
+    .sidebar > .sidebar-collapse {
+      background-color: #FFFFFF;
     }
 
     .sidebar > .sidebar-collapse .sidebar-menu {
       margin-top: 3rem;  
+      background-color: #FFFFFF;
     }
     
     .sidebar > .sidebar-collapse .sidebar-socmed-icons {
       margin-bottom: 3rem;
+      text-align: center;
+    }
+        
+    .sidebar-socmed-icons i {
+      transition: all 0.2s ease-in-out;
+      font-size: 18px;
+      margin: 5px 0;
+      color: #292f36;
     }
   }
 
-/*
-.wrapper {
-  display: flex;
-  width: 100%;
-  align-items: stretch;
-}
-
-.sidebar {
-  min-width: 10%;
-  max-width: 10%;
-  min-height: 100vh;
-  border-right: 0.5px solid #e5e5e5;
-  background: #ffffff;
-  color: #fff;
-  transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: fixed;
-}
-
-.sidebar-header {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.sidebar-logo {
-  height: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.sidebar-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 75px 0;
-}
-
-.sidebar-menu-icon {
-  height: 30px;
-}
-
-.sidebar-collapse {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.menu {
-  position: relative;
-  height: 30px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0;
-}
-
-.menu .image,
-.menu .text {
-  transition: opacity 0.25s ease-in-out;
-}
-
-.menu .text {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  width: 100px;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  color: #f25209;
-}
-
-.menu:hover .image {
-  opacity: 0;
-}
-
-.menu:hover .text {
-  opacity: 1;
-}
-
-.sidebar-socmed-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.sidebar-socmed-icons i {
-  transition: all 0.2s ease-in-out;
-  font-size: 18px;
-  margin: 5px 0;
-  color: #292f36;
-}
-
-.grow:hover {
-  transform: scale(1.1);
-}
-
-.navbar {
-  flex-wrap: nowrap !important;
-  display: flex;
-  justify-content: space-between;
-}
-
-.toggle-button {
-  display: none;
-}
-
-@media only screen and (max-width: 360px),
-  only screen and (min-device-width: 375px) and (max-device-width: 812px),
-  only screen and (min-device-width: 411px) and (max-device-width: 823px) {
-  .wrapper {
-    display: flex;
-    width: 360px;
-    align-items: stretch;
-  }
-
-  .sidebar {
-    min-width: 360px;
-    max-width: 360px;
-    min-height: 50px;
-    border-right: none;
-    border-bottom: 0.5px solid #e5e5e5;
-    background: #ffffff;
-    color: #fff;
-    transition: all 0.3s;
-    display: none;
-    position: fixed;
-  } 
-
-  #navbar-phone {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sidebar-header {
-    padding: 0 7.5px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .sidebar-logo {
-    height: 50px;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .navbar {
-    padding: 0 !important;
-  }
-
-  .navbar-toggler {
-    border: none !important;
-    margin-right: 0 !important;
-    padding: 0 !important;
-  }
-
-  .navbar-toggler-icon {
-    font-size: 28px;
-  }
-
-  .toggle-button {
-    display: inline-block;
-  }
-
-  .sidebar-collapse {
-    height: 50%;
-    margin: auto 5px;
-    width: 100%;
-    z-index: 500000;
-  }
-
-  .sidebar-menu {
-    margin: 25% 0 !important;
-    width: 100%;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .menu {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0;
-  }
-
-  .menu .image,
-  .menu .text {
-    transition: opacity 0.25s ease-in-out;
-  }
-
-  .menu .text {
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    opacity: 1;
-    color: #f25209;
-  }
-
-  .menu .image {
-    opacity: 0;
-  }
-
-  .sidebar-collapse .sidebar-socmed-icons {
-    display: none;
-  }
-
-  .collapse:not(.show) {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 361px) and (max-width: 768px) {
-  .wrapper {
-    display: flex;
-    min-width: 361px;
-    max-width: 768px;
-    align-items: stretch;
-  }
-
-  .sidebar {
-    min-width: 361px;
-    max-width: 768px;
-    min-height: 50px;
-    border-right: none;
-    border-bottom: 0.5px solid #e5e5e5;
-    background: #ffffff;
-    color: #fff;
-    transition: all 0.3s;
-    display: none;
-    position: fixed;
-  }
-
-  #navbar-phone {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sidebar-header {
-    padding: 0 7.5px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .sidebar-logo {
-    height: 50px;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .navbar {
-    padding: 0 !important;
-  }
-
-  .navbar-toggler {
-    border: none !important;
-    margin-right: 0 !important;
-    padding: 0 !important;
-  }
-
-  .navbar-toggler-icon {
-    font-size: 28px;
-  }
-
-  .sidebar-collapse {
-    height: 50%;
-    margin: auto 5px;
-    width: 100%;
-    z-index: 500000;
-  }
-
-  .sidebar-menu {
-    margin: 25% 0 !important;
-    width: 100%;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .menu {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0;
-  }
-
-  .menu .image,
-  .menu .text {
-    transition: opacity 0.25s ease-in-out;
-  }
-
-  .menu .text {
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    opacity: 1;
-    color: #f25209;
-  }
-
-  .menu .image {
-    opacity: 0;
-  }
-
-  .sidebar-collapse .sidebar-socmed-icons {
-    display: none;
-  }
-
-  .toggle-button {
-    display: inline-block;
-  }
-}
-*/
+  

@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { AboutMe, Portfolio, Skills, ContactMe } from '../sections';
 
 import Sidebar from '../sections/sidebar/Sidebar';
-
-import './ContentPage.css';
 
 const Content = () => {
   return (

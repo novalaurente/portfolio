@@ -20,16 +20,7 @@ const Sidebar = () => {
       setCollapsed(collapsed);
     }
   };
-
-  // <div id='navbar-phone'>
-  //         <NavbarBrand href='#'>
-  //           <div className='sidebar-header'>
-  //             <img className='sidebar-logo grow' src='assets/images/portfolio-logo.gif' alt='' />
-  //           </div>
-  //         </NavbarBrand>
-  //         <NavbarToggler onClick={toggleNavbar} className='mr-2 toggle-button' style={{outline: 'none'}} />
-  //       </div>
-
+ 
   return (
     <Fragment>
       <Navbar fixed='top' className='sidebar' light expand="md">
