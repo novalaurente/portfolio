@@ -49,14 +49,7 @@ const LandingPage = () => {
                     src='assets/images/triangles/yellow.svg'
                     alt=''
                   />
-                  <div className='middle yellow-triangle-middle'>
-                    <Link
-                      to='content#Skills'
-                      smooth
-                      className='text text-black yellow-triangle-text'>
-                      Skills
-                    </Link>
-                  </div>
+                  <div className='middle yellow-triangle-middle'></div>
                 </div>
 
                 <div id='black-triangle-container' className='container grow'>
@@ -65,14 +58,7 @@ const LandingPage = () => {
                     src='assets/images/triangles/black.svg'
                     alt=''
                   />
-                  <div className='middle black-triangle-middle'>
-                    <Link
-                      to='content#Portfolio'
-                      smooth
-                      className='text text-white black-triangle-text'>
-                      Portfolio
-                    </Link>
-                  </div>
+                  <div className='middle black-triangle-middle'></div>
                 </div>
 
                 <img
@@ -94,14 +80,7 @@ const LandingPage = () => {
                     src='assets/images/triangles/right-orange.svg'
                     alt=''
                   />
-                  <div className='middle right-orange-middle'>
-                    <Link
-                      to='content#contactMe'
-                      smooth
-                      className='text text-white right-orange-text'>
-                      Contact Me
-                    </Link>
-                  </div>
+                  <div className='middle right-orange-middle'></div>
                 </div>
                 <img
                   className='animated zoomIn'

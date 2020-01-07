@@ -336,9 +336,8 @@ html {
 }
 
 .text:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
-
 
 /* ---------------------------------------------------
   CONTENT STYLE
@@ -792,11 +791,6 @@ html {
     font-size: 8px;
     padding: 8px auto;
   }
-  
-  .text:hover {
-    text-decoration: underline;
-  }
-
 
 /* ---------------------------------------------------
   CONTENT STYLE

@@ -10,8 +10,7 @@ const AboutMe = () => {
         <div className='section-content'>
           <div className='section-text'>
             <p>
-              Hello! My name is Nova Laurente and I’m an aspiring web developer from Taguig City. I
-              am currently attending a 3-month bootcamp at Zuitt.
+              Hello! My name is Nova Laurente and I’m a full stack web developer from Taguig City.
             </p>
             <p>
               My interest in the IT industry started during my first job when I became a project
