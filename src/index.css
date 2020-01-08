@@ -426,13 +426,13 @@ html {
 .custom-btn {
 	width: 175px;
 	height: 35px;
-	margin: 10px 5px 0 0;
+	margin: 10px 5px 0 0 !important;
 	border-style: none;
 	border:2px solid #F25209;
 	background-color: #F25209;
-	color: white;
+	color: white !important;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
   cursor: pointer;
@@ -441,9 +441,9 @@ html {
 }
 
 .custom-btn:hover {
-	background-color: #FFFFFF;
-	color: #F25209;
-	border: 2px solid #F25209;
+	background-color: #FFFFFF !important;
+	color: #F25209 !important;
+	border: 2px solid #F25209 !important;
 }
 
 /*section 2*/

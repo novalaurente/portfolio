@@ -1,7 +1,24 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Fade from 'react-reveal/Fade';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+
+  const {
+    buttonLabel,
+    className
+  } = props;
+
+  const [firstModal, setFirstModal] = useState(false);
+  const [secondModal, setSecondModal] = useState(false);
+  const [thirdModal, setThirdModal] = useState(false);
+
+  const toggleFirstModal = () => setFirstModal(!firstModal);
+  const toggleSecondModal = () => setSecondModal(!secondModal);
+  const toggleThirdModal = () => setThirdModal(!thirdModal);
+
   return (
     <Fragment>
       <section className='portfolio' id='Portfolio'>
@@ -41,7 +58,43 @@ const Portfolio = () => {
                     target='_blank'
                     rel='noopener noreferrer'>
                     Gitlab Code
-                  </a>
+                  </a>                  
+                  <a 
+                    onClick={toggleFirstModal}
+                    className='custom-btn'
+                  >
+                    {buttonLabel} Screenshots
+                  </a>                  
+                    <Modal isOpen={firstModal} toggle={toggleFirstModal} className={className} size={'lg'}>
+                      <ModalHeader toggle={toggleFirstModal}>Ikebana Website Screenshots</ModalHeader>
+                      <ModalBody>
+                      <div className='h-100 col-lg-10 mx-auto d-flex justify-content-center'>
+                        <Carousel autoPlay interval={1500} infiniteLoop >
+                          <div>
+                            <img src='assets/images/capstone1-1.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone1-2.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone1-3.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone1-4.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone1-5.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone1-6.png' />
+                          </div>
+                        </Carousel>
+                      </div>
+                      </ModalBody>
+                      <ModalFooter>
+                        <Button color="secondary" onClick={toggleFirstModal}>Close</Button>
+                      </ModalFooter>
+                    </Modal>
                 </div>
               </div>
             </Fade>
@@ -75,6 +128,45 @@ const Portfolio = () => {
                     rel='noopener noreferrer'>
                     Gitlab Code
                   </a>
+                  <a 
+                    onClick={toggleSecondModal}
+                    className='custom-btn'
+                  >
+                    {buttonLabel} Screenshots
+                  </a>                  
+                    <Modal isOpen={secondModal} toggle={toggleSecondModal} className={className} size={'lg'}>
+                      <ModalHeader toggle={toggleSecondModal}>Invento Screenshots</ModalHeader>
+                      <ModalBody>
+                      <div className='h-100 col-lg-10 mx-auto d-flex justify-content-center'>
+                        <Carousel autoPlay infiniteLoop >
+                          <div>
+                            <img src='assets/images/capstone2-1.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-2.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-3.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-4.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-5.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-6.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone2-7.png' />
+                          </div>
+                        </Carousel>
+                      </div>
+                      </ModalBody>
+                      <ModalFooter>
+                        <Button color="secondary" onClick={toggleSecondModal}>Close</Button>
+                      </ModalFooter>
+                    </Modal>
                 </div>
               </div>
             </Fade>
@@ -121,6 +213,45 @@ const Portfolio = () => {
                     rel='noopener noreferrer'>
                     Gitlab Code
                   </a>
+                  <a 
+                    onClick={toggleThirdModal}
+                    className='custom-btn'
+                  >
+                    {buttonLabel} Screenshots
+                  </a>                  
+                    <Modal isOpen={thirdModal} toggle={toggleThirdModal} className={className} size={'lg'}>
+                      <ModalHeader toggle={toggleThirdModal}>Ascend Yoga Screenshots</ModalHeader>
+                      <ModalBody>
+                      <div className='h-100 col-lg-10 mx-auto d-flex justify-content-center'>
+                        <Carousel autoPlay infiniteLoop >
+                          <div>
+                            <img src='assets/images/capstone3-2.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-3.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-4.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-8.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-9.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-10.png' />
+                          </div>
+                          <div>
+                            <img src='assets/images/capstone3-11.png' />
+                          </div>
+                        </Carousel>
+                      </div>
+                      </ModalBody>
+                      <ModalFooter>
+                        <Button color="secondary" onClick={toggleThirdModal}>Close</Button>
+                      </ModalFooter>
+                    </Modal>
                 </div>
               </div>
             </Fade>
