@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Fade from 'react-reveal/Fade';
 
-const AboutMe = () => {
+const Portfolio = () => {
   return (
     <Fragment>
       <section className='portfolio' id='Portfolio'>
@@ -132,4 +132,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Portfolio;
